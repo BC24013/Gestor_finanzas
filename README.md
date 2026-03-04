@@ -39,7 +39,7 @@ La aplicación facilitará la administración de las finanzas personales, permit
 
 > Líder: Alisson Patricia Barillas Castillo - BC24013
 > Integrante 1: Oscar Miguel Herrera Valladares - HV22011
-> Integrante 2: 
+> Integrante 2: Franklin Esteban Perez Fuentes - PF24001
 > Integrante 3: Héctor Danilo Benítez Ortéz - BO16004
 > Integrante 4: 
 
