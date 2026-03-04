@@ -41,7 +41,7 @@ La aplicación facilitará la administración de las finanzas personales, permit
 > **Integrante 1:** Oscar Miguel Herrera Valladares - HV22011
 > **Integrante 2:** Franklin Esteban Perez Fuentes - PF24001
 > **Integrante 3:** Héctor Danilo Benítez Ortéz - BO16004
-> **Integrante 4:** 
+> **Integrante 4:** Jonás Eduardo Villalobos Morán - VM24042
 
 ---
 
