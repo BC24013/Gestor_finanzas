@@ -10,7 +10,7 @@ import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.PrePersist;
 import lombok.Data;
 
-@MappedSuperclass // Indica que esta clase no es una entidad, sino una base para otras
+@MappedSuperclass 
 @Data
 public abstract class BaseEntity {
 

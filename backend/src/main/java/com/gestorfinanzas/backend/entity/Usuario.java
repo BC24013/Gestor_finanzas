@@ -3,11 +3,11 @@ package com.gestorfinanzas.backend.entity;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity; // <--- TE FALTABA ESTE
+import jakarta.persistence.Entity; 
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
-import lombok.EqualsAndHashCode; // <--- TE FALTABA ESTE
+import lombok.EqualsAndHashCode; 
 import lombok.ToString;
 
 @Entity 
