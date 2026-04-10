@@ -12,6 +12,6 @@ public class TransaccionDTO {
     private BigDecimal monto;
     private LocalDate fecha;
     private String tipo;
-    private Long usuario;
-    private Long categoria;
+    private Long usuarioId;
+    private Long categoriaId;
 }
