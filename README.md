@@ -34,6 +34,17 @@ La aplicación facilitará la administración de las finanzas personales, permit
 - Visualización de reportes y gráficos
 - Gestión de presupuestos mensuales
 ---
+## Configuración de base de datos:
+
+- 1. Crear la base de datos `finanzas_bd`
+
+- 2. Crear el usuario:
+
+- * usuario: finanzas_user
+- * contraseña: proyectodaw
+
+- 3. Configurar `application.properties` con esas credenciales
+---
 
 ## Integrantes
 
