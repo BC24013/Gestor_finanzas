@@ -29,8 +29,8 @@ public class TransaccionService {
 
     //Crear - Create
     public TransaccionDTO save(TransaccionDTO dto){
-        Usuario usuario = usuarioRepository.findById(dto.getUsuarioId()).orElse(null);
-        Categoria categoria = categoriaRepository.findById(dto.getCategoriaId()).orElse(null);
+        Usuario usuario = usuarioRepository.findById(dto.getUsuarioId()).orElseThrow(() -> new RuntimeException("Error: Usuario no encontrado con ID: " + dto.getUsuarioId()));
+        Categoria categoria = categoriaRepository.findById(dto.getCategoriaId()).orElseThrow(() -> new RuntimeException("Error: Categoría no encontrada con ID: " + dto.getCategoriaId()));
 
         Transaccion transaccion = new Transaccion();
         transaccion.setDescripcion(dto.getDescripcion());
@@ -58,12 +58,12 @@ public class TransaccionService {
             existing.setFecha(dto.getFecha());
             existing.setTipo(dto.getTipo());
             // Comprobacion de existencia de usuario/categoria
-            existing.setUsuario(usuarioRepository.findById(dto.getUsuarioId()).orElse(null));
-            existing.setCategoria(categoriaRepository.findById(dto.getCategoriaId()).orElse(null));
-
+            existing.setUsuario(usuarioRepository.findById(dto.getUsuarioId()).orElseThrow(() -> new RuntimeException("Usuario no encontrado")));
+            existing.setCategoria(categoriaRepository.findById(dto.getCategoriaId()).orElseThrow(() -> new RuntimeException("Categoría no encontrada")));
             Transaccion updated = transaccionRepository.save(existing);
+            
             return convertToDTO(updated);
-        }).orElse(null);
+        }).orElseThrow(() -> new RuntimeException("Transacción original no encontrada"));
     }
 
     //Borrar - Delete
