@@ -34,14 +34,25 @@ La aplicación facilitará la administración de las finanzas personales, permit
 - Visualización de reportes y gráficos
 - Gestión de presupuestos mensuales
 ---
+## Configuración de base de datos:
 
-## Equipo
+- 1. Crear la base de datos `finanzas_bd`
 
-> Líder: Alisson Patricia Barillas Castillo - BC24013
-> Integrante 1: Oscar Miguel Herrera Valladares - HV22011
-> Integrante 2: Franklin Esteban Perez Fuentes - PF24001
-> Integrante 3: 
-> Integrante 4: 
+- 2. Crear el usuario:
+
+- * usuario: finanzas_user
+- * contraseña: proyectodaw
+
+- 3. Configurar `application.properties` con esas credenciales
+---
+
+## Integrantes
+
+> **Líder del equipo:** Alisson Patricia Barillas Castillo - BC24013
+> **Integrante 1:** Oscar Miguel Herrera Valladares - HV22011
+> **Integrante 2:** Franklin Esteban Perez Fuentes - PF24001
+> **Integrante 3:** Héctor Danilo Benítez Ortéz - BO16004
+> **Integrante 4:** Jonás Eduardo Villalobos Morán - VM24042
 
 ---
 
