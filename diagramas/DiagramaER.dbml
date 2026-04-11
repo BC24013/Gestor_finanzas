@@ -1,0 +1,36 @@
+// Diagrama Entidad-Relación - Gestor de Finanzas
+// Base de datos: finanzas_bd
+
+Table usuario {
+  id bigint [pk, increment]
+  nombre varchar(100) [not null]
+  gmail varchar(150) [unique, not null]
+  password varchar(255) [not null]
+  created_at timestamp [default: `now()`]
+}
+
+Table categoria {
+  id bigint [pk, increment]
+  nombre varchar(100) [not null]
+  descripcion varchar(255)
+  tipo varchar(20) [not null, note: 'INGRESO o GASTO']
+  created_at timestamp [default: `now()`]
+}
+
+Table transaccion {
+  id bigint [pk, increment]
+  descripcion varchar(255)
+  monto decimal(10,2) [not null]
+  fecha date [not null]
+  tipo varchar(20) [not null, note: 'INGRESO o GASTO']
+  usuario_id bigint [not null]
+  categoria_id bigint [not null]
+  created_at timestamp [default: `now()`]
+}
+
+// Definición de Relaciones (Foreign Keys)
+// Un usuario tiene muchas transacciones
+Ref: usuario.id < transaccion.usuario_id [delete: cascade]
+
+// Una categoría puede estar en muchas transacciones
+Ref: categoria.id < transaccion.categoria_id [delete: restrict]
