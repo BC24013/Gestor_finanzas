@@ -1,0 +1,39 @@
+@startuml Gestor_de_Finanzas
+
+!define Table(name,desc) class name as "desc" << (T,#FFAAAA) >>
+!define primary_key(x) <b>PK: x</b>
+!define foreign_key(x) <i>FK: x</i>
+
+
+Table(usuario, "usuario\n(Gestión de perfiles)") {
+    primary_key(id) : bigint
+    nombre : varchar(100)
+    gmail : varchar(150)
+    password : varchar(255)
+    created_at : timestamp
+}
+
+Table(categoria, "categoria\n(Clasificación)") {
+    primary_key(id) : bigint
+    nombre : varchar(100)
+    descripcion : varchar(255)
+    tipo : varchar(20)
+    created_at : timestamp
+}
+
+Table(transaccion, "transaccion\n(Movimientos)") {
+    primary_key(id) : bigint
+    descripcion : varchar(255)
+    monto : decimal(10,2)
+    fecha : date
+    tipo : varchar(20)
+    foreign_key(usuario_id) : bigint
+    foreign_key(categoria_id) : bigint
+    created_at : timestamp
+}
+
+' Relaciones
+usuario "1" --{ "0..*" transaccion : "registra"
+categoria "1" --{ "0..*" transaccion : "clasifica"
+
+@enduml
