@@ -1,5 +1,3 @@
-CREATE DATABASE finanzas_bd;
-
 -- TABLA USUARIO
 CREATE TABLE usuario (
     id SERIAL PRIMARY KEY,
