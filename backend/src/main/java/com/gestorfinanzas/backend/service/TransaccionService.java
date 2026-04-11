@@ -50,6 +50,13 @@ public class TransaccionService {
         return transaccionRepository.findAll().stream().map(this::convertToDTO).collect(Collectors.toList());
     }
 
+    // Buscar por ID - Read single
+    public TransaccionDTO findById(Long id) {
+        Transaccion transaccion = transaccionRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Transacción no encontrada con ID: " + id));
+        return convertToDTO(transaccion);
+    }
+
     //Actualizar - Update
     public TransaccionDTO update(Long id, TransaccionDTO dto) {
         return transaccionRepository.findById(id).map(existing -> {
