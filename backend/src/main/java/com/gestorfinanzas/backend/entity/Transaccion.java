@@ -34,10 +34,14 @@ public class Transaccion extends BaseEntity { // Hereda de BaseEntity
     @Column(nullable = false, length = 20)
     private String tipo;
 
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
     @ManyToOne
     @JoinColumn(name = "usuario_id", nullable = false)
     private Usuario usuario;
 
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
     @ManyToOne
     @JoinColumn(name = "categoria_id", nullable = false)
     private Categoria categoria;
