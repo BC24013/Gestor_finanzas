@@ -20,8 +20,6 @@
 
 </div>
 
-<img width="1920" height="1105" alt="img - 5" src="https://github.com/user-attachments/assets/64b822e2-1633-4304-9dbb-609f0a584a0c" />
-
 
 ---
 
