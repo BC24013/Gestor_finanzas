@@ -19,7 +19,8 @@ public class Usuario extends BaseEntity { // Hereda correctamente de BaseEntity
     private String nombre;
     private String gmail;
     private String password;
-    
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
     private List<Transaccion> transacciones;
 }

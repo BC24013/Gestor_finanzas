@@ -1,7 +1,7 @@
 -- Usuario
 INSERT INTO usuario (nombre, gmail, password) VALUES
 ('Alisson', 'alix@gmail.com', 'abcaass'),
-('Hector', 'hecben@gmail.com', 'benihect24')
+('Hector', 'hecben@gmail.com', 'benihect24');
 
 -- Categorías
 INSERT INTO categoria (nombre, descripcion, tipo) VALUES
