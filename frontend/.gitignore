@@ -1,0 +1,35 @@
+# Dependencias de Node (Frontend)
+node_modules/
+dist/
+dist-ssr/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Entornos Virtuales y Variables de Entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Java / Spring Boot (Backend)
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+*.class
+*.log
+
+# IDEs y Editores
+../.idea/
+.vscode/
+*.swp
+*.swo
+*.iws
+*.iml
+*.ipr
+
+# Sistema Operativo
+.DS_Store
+Thumbs.db
