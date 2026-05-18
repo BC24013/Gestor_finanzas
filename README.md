@@ -20,6 +20,8 @@
 
 </div>
 
+<img width="1920" height="1105" alt="Slide 16_9 - 5" src="https://github.com/user-attachments/assets/673cb94c-c1e6-4cdd-9ae5-40a2064a0941" />
+
 
 ---
 
