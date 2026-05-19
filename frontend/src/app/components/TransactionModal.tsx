@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { DeleteConfirmModal } from "./ui/delete-confirm-modal";
 
 export type TxType = "gasto" | "ingreso";
 export type TxCategory = "Comida" | "Transporte" | "Servicios" | "Compras" | "Salario";
@@ -29,6 +30,13 @@ export function TransactionModal({ open, mode, initial, onClose, onSave, onDelet
   const [nombre, setNombre] = useState("");
   const [fecha, setFecha] = useState(() => new Date().toISOString().slice(0, 10));
   const [monto, setMonto] = useState("");
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+
+  const handleConfirmDelete = () => {
+    onDelete?.();
+    setShowDeleteConfirm(false);
+    onClose();
+  };
 
   useEffect(() => {
     if (open) {
@@ -57,6 +65,7 @@ export function TransactionModal({ open, mode, initial, onClose, onSave, onDelet
   };
 
   return (
+    <>
     <div
       className="fixed inset-0 z-[200] flex items-center justify-center p-4"
       style={{ background: "rgba(0,0,0,0.6)", backdropFilter: "blur(8px)" }}
@@ -165,10 +174,7 @@ export function TransactionModal({ open, mode, initial, onClose, onSave, onDelet
           {mode === "edit" && onDelete && (
             <button
               type="button"
-              onClick={() => {
-                onDelete();
-                onClose();
-              }}
+              onClick={() => setShowDeleteConfirm(true)}
               className="rounded-[12px] py-3 px-4 cursor-pointer border-0"
               style={{ background: "#ff999a", color: "#161618", fontWeight: 600 }}
             >
@@ -193,6 +199,13 @@ export function TransactionModal({ open, mode, initial, onClose, onSave, onDelet
         </div>
       </form>
     </div>
+
+    <DeleteConfirmModal
+      isOpen={showDeleteConfirm}
+      onClose={() => setShowDeleteConfirm(false)}
+      onConfirm={handleConfirmDelete}
+    />
+    </>
   );
 }
 
