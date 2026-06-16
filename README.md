@@ -11,6 +11,11 @@
 
 El sistema incluye funcionalidades avanzadas como **Ahorro Automático (AutoSave)** y una simulación interactiva de **protocolo de transición segura (AES-GCM)** al cambiar o iniciar sesión con diferentes perfiles de usuario.
 
+
+<img width="2858" height="1778" alt="1" src="https://github.com/user-attachments/assets/baa1783d-f1ed-4413-8969-f78a5fc8296a" />
+
+
+
 ---
 
 ## 🎯 Características Principales
