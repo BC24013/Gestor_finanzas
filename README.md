@@ -260,7 +260,7 @@ A continuación se presentan capturas de pantalla de la interfaz del usuario.
     <img width="1919" height="912" alt="image" src="https://github.com/user-attachments/assets/1473c55c-bc5c-44db-833c-5d051805043a" />
 
 *   **Dashboard Principal:**
-   <img width="1906" height="912" alt="image" src="https://github.com/user-attachments/assets/1bb7a57c-63e5-4313-a595-52896afacdf8" />
+    <img width="1919" height="914" alt="image" src="https://github.com/user-attachments/assets/a2f2cbf5-3e90-4e7c-87b0-e69caf97b564" />
 
 *   **Gestión de Transacciones:**
     <img width="1919" height="916" alt="image" src="https://github.com/user-attachments/assets/b6f98ca2-897d-4641-a0f7-e8170f64d50e" />
