@@ -236,19 +236,20 @@ La API REST del backend cuenta con las siguientes rutas de servicio bajo el pref
 El backend está auto-documentado con Swagger, facilitando la visualización e interacción con cada uno de los endpoints de la API.
 
 *   **Punto de entrada de la documentación:**
-    ![Swagger Principal](docs/evidencias_swagger/Swaggerabierta.png)
+    <img width="1904" height="916" alt="image" src="https://github.com/user-attachments/assets/2ce0cd9b-b944-4954-8867-16de5e33bdd4" />
 
 *   **Ejemplo de Listado (GET):**
-    ![GET Listar](docs/evidencias_swagger/GETlistar1.png)
+    <img width="1383" height="853" alt="image" src="https://github.com/user-attachments/assets/0c8d385a-03ff-48cb-a46a-09c0ccfb3c65" />
 
 *   **Ejemplo de Registro (POST):**
-    ![POST Crear](docs/evidencias_swagger/POST1.png)
+    <img width="1413" height="824" alt="image" src="https://github.com/user-attachments/assets/74ef7938-4ee5-4105-8b1f-0e675ffc918f" />
 
 *   **Ejemplo de Modificación (PUT):**
-    ![PUT Modificar](docs/evidencias_swagger/PUT1.png)
+    <img width="1239" height="867" alt="image" src="https://github.com/user-attachments/assets/37215dab-6372-4f32-99a1-f1afebbd37ee" />
 
 *   **Ejemplo de Eliminación (DELETE):**
-    ![DELETE Eliminar](docs/evidencias_swagger/DELETE.png)
+   <img width="1547" height="582" alt="image" src="https://github.com/user-attachments/assets/d8a44461-758a-4c13-8f38-4dd58337aef8" />
+
 
 *Nota: Puedes ver más detalles y capturas de prueba específicas en la carpeta [docs/evidencias_swagger/](file:///c:/Users/i5/Desktop/Gestor_finanzas/Gestor_finanzas-main/docs/evidencias_swagger).*
 
@@ -256,18 +257,20 @@ El backend está auto-documentado con Swagger, facilitando la visualización e i
 A continuación se presentan capturas de pantalla de la interfaz del usuario. 
 
 *   **Pantalla de Login:**
-    ![Vista de Login](docs/vistas/login.png)
+    <img width="1919" height="912" alt="image" src="https://github.com/user-attachments/assets/1473c55c-bc5c-44db-833c-5d051805043a" />
 
 *   **Dashboard Principal:**
-    ![Vista de Dashboard](docs/vistas/dashboard.png)
+   <img width="1906" height="912" alt="image" src="https://github.com/user-attachments/assets/1bb7a57c-63e5-4313-a595-52896afacdf8" />
 
 *   **Gestión de Transacciones:**
-    ![Vista de Transacciones](docs/vistas/transacciones.png)
+    <img width="1919" height="916" alt="image" src="https://github.com/user-attachments/assets/b6f98ca2-897d-4641-a0f7-e8170f64d50e" />
 
 *   **Metas de Ahorro:**
-    ![Vista de Metas](docs/vistas/metas.png)
+    <img width="1906" height="916" alt="image" src="https://github.com/user-attachments/assets/1ce994c5-cc11-46e8-bf2d-00824090152b" />
 
-*Nota: Guarda las capturas de tu aplicación local en la carpeta `docs/vistas/` con los nombres `login.png`, `dashboard.png`, `transacciones.png` y `metas.png` para que se visualicen correctamente en esta sección.*
+*   **Reportes:**
+    <img width="1908" height="916" alt="image" src="https://github.com/user-attachments/assets/7255821a-82f3-4198-8ea2-e4b27705a327" />
+
 
 ---
 
