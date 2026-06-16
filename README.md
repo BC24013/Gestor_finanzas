@@ -230,46 +230,7 @@ La API REST del backend cuenta con las siguientes rutas de servicio bajo el pref
 | | `DELETE`| `/api/transacciones/{id}`| Elimina la transacción seleccionada. |
 ---
 
-## 📸 Evidencias de Funcionamiento
 
-### 1. Documentación de API (Swagger UI)
-El backend está auto-documentado con Swagger, facilitando la visualización e interacción con cada uno de los endpoints de la API.
-
-*   **Punto de entrada de la documentación:**
-    ![Swagger Principal](docs/evidencias_swagger/Swaggerabierta.png)
-
-*   **Ejemplo de Listado (GET):**
-    ![GET Listar](docs/evidencias_swagger/GETlistar1.png)
-
-*   **Ejemplo de Registro (POST):**
-    ![POST Crear](docs/evidencias_swagger/POST1.png)
-
-*   **Ejemplo de Modificación (PUT):**
-    ![PUT Modificar](docs/evidencias_swagger/PUT1.png)
-
-*   **Ejemplo de Eliminación (DELETE):**
-    ![DELETE Eliminar](docs/evidencias_swagger/DELETE.png)
-
-*Nota: Puedes ver más detalles y capturas de prueba específicas en la carpeta [docs/evidencias_swagger/](file:///c:/Users/i5/Desktop/Gestor_finanzas/Gestor_finanzas-main/docs/evidencias_swagger).*
-
-### 2. Capturas de las Vistas del Frontend
-A continuación se presentan capturas de pantalla de la interfaz del usuario. 
-
-*   **Pantalla de Login:**
-    ![Vista de Login](docs/vistas/login.png)
-
-*   **Dashboard Principal:**
-    ![Vista de Dashboard](docs/vistas/dashboard.png)
-
-*   **Gestión de Transacciones:**
-    ![Vista de Transacciones](docs/vistas/transacciones.png)
-
-*   **Metas de Ahorro:**
-    ![Vista de Metas](docs/vistas/metas.png)
-
-*Nota: Guarda las capturas de tu aplicación local en la carpeta `docs/vistas/` con los nombres `login.png`, `dashboard.png`, `transacciones.png` y `metas.png` para que se visualicen correctamente en esta sección.*
-
----
 
 ## 👥 Equipo de Desarrollo
 
