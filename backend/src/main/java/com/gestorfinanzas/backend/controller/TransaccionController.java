@@ -44,10 +44,13 @@ public class TransaccionController {
         }
     }
 
-    @Operation(summary = "Obtener todas las transacciones", description = "Lista todas las transacciones registradas")
+    @Operation(summary = "Obtener todas las transacciones", description = "Lista todas las transacciones registradas, opcionalmente filtradas por usuarioId")
     @ApiResponse(responseCode = "200", description = "Lista obtenida correctamente")
     @GetMapping
-    public ResponseEntity<List<TransaccionDTO>> listarTransacciones() {
+    public ResponseEntity<List<TransaccionDTO>> listarTransacciones(@RequestParam(required = false) Long usuarioId) {
+        if (usuarioId != null) {
+            return ResponseEntity.ok(transaccionService.findByUsuarioId(usuarioId));
+        }
         List<TransaccionDTO> transacciones = transaccionService.findAll();
         return ResponseEntity.ok(transacciones);
     }

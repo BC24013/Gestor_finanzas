@@ -14,25 +14,28 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Data 
-@NoArgsConstructor 
-@AllArgsConstructor 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 @Entity
 @Table(name = "transaccion")
-public class Transaccion extends BaseEntity { // Hereda de BaseEntity
+public class Transaccion extends BaseEntity {
 
     private String descripcion;
 
     @Column(nullable = false, precision = 10, scale = 2)
-    private BigDecimal monto; 
+    private BigDecimal monto;
 
     @Column(nullable = false)
     private LocalDate fecha;
 
     @Column(nullable = false, length = 20)
     private String tipo;
+
+    @Column(length = 20)
+    private String estado;
 
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
@@ -45,5 +48,4 @@ public class Transaccion extends BaseEntity { // Hereda de BaseEntity
     @ManyToOne
     @JoinColumn(name = "categoria_id", nullable = false)
     private Categoria categoria;
-    
 }

@@ -8,12 +8,10 @@ import java.time.LocalDate;
 @Data
 public class TransaccionDTO {
 
-// Para obtener mensajes de errores con swagger modifico DTO para agregar las validaciones/restricciones de la bd
-
     private Long id;
 
     @Size(max = 255, message = "La descripción no puede exceder 255 caracteres")
-    private String descripcion;   // Puede ser vacía o nula según el esquema
+    private String descripcion;
 
     @NotNull(message = "El monto es obligatorio")
     @DecimalMin(value = "0.00", inclusive = true, message = "El monto no puede ser negativo")
@@ -21,16 +19,21 @@ public class TransaccionDTO {
     private BigDecimal monto;
 
     @NotNull(message = "La fecha es obligatoria")
-    @PastOrPresent(message = "La fecha no puede ser futura")
     private LocalDate fecha;
 
     @NotBlank(message = "El tipo es obligatorio")
     @Pattern(regexp = "INGRESO|GASTO", message = "El tipo debe ser INGRESO o GASTO")
     private String tipo;
 
+    private String estado;
+
     @NotNull(message = "El ID de usuario es obligatorio")
     private Long usuarioId;
 
     @NotNull(message = "El ID de categoría es obligatorio")
     private Long categoriaId;
+
+    // Campos calculados para el frontend
+    private String usuarioNombre;
+    private String categoriaNombre;
 }
