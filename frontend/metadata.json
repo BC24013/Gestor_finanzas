@@ -1,0 +1,6 @@
+{
+  "name": "FinanceFlux",
+  "description": "Gestor de Finanzas Personales con Dashboard Inteligente y diseño Glassmorphism minimalista.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

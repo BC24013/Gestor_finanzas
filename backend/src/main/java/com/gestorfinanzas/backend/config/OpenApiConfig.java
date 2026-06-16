@@ -16,9 +16,9 @@ public class OpenApiConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API de Salud Financiera")
+                        .title("FinanceFlux API")
                         .version("1.0")
-                        .description("Sistema de salud financiera")
+                        .description("Sistema de Gestión de Finanzas Personales")
                         .contact(new Contact()
                                 .name("""
                                       Alisson Patricia Barillas Castillo - BC24013,

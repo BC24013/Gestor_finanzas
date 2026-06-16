@@ -20,32 +20,24 @@ import lombok.ToString;
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 @Entity
-@Table(name = "transaccion")
-public class Transaccion extends BaseEntity {
+@Table(name = "meta")
+public class Meta extends BaseEntity {
 
-    private String descripcion;
+    @Column(nullable = false, length = 100)
+    private String nombre;
 
-    @Column(nullable = false, precision = 10, scale = 2)
-    private BigDecimal monto;
+    @Column(name = "monto_objetivo", nullable = false, precision = 10, scale = 2)
+    private BigDecimal montoObjetivo;
 
-    @Column(nullable = false)
-    private LocalDate fecha;
+    @Column(name = "monto_actual", nullable = false, precision = 10, scale = 2)
+    private BigDecimal montoActual;
 
-    @Column(nullable = false, length = 20)
-    private String tipo;
-
-    @Column(length = 20)
-    private String estado;
+    @Column(name = "fecha_limite")
+    private LocalDate fechaLimite;
 
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @ManyToOne
     @JoinColumn(name = "usuario_id", nullable = false)
     private Usuario usuario;
-
-    @EqualsAndHashCode.Exclude
-    @ToString.Exclude
-    @ManyToOne
-    @JoinColumn(name = "categoria_id", nullable = false)
-    private Categoria categoria;
 }
