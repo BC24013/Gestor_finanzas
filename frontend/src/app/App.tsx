@@ -13,67 +13,12 @@ import SlideInicio from "../imports/Slide1691/Slide1691";
 import SlideTransacciones from "../imports/Slide1692/Slide1692";
 import SlideAnadir from "../imports/Slide1693/Slide1693";
 import SlideReportes from "../imports/Slide1694/Slide1694";
+import { demoTransactions, demoGoals } from "../data/mockData";
+
 
 type Tab = "inicio" | "transacciones" | "anadir" | "reportes";
 
 export default function App() {
-  const makeDateOffset = (daysAgo: number) => {
-    const d = new Date();
-    d.setDate(d.getDate() - daysAgo);
-    return d.toISOString().slice(0, 10);
-  };
-  const demoTransactions: Transaction[] = [
-    {
-      id: "demo-tx-1",
-      tipo: "ingreso",
-      categoria: "Salario",
-      nombre: "Pago",
-      fecha: makeDateOffset(1),
-      monto: 1200,
-    },
-    {
-      id: "demo-tx-2",
-      tipo: "gasto",
-      categoria: "Comida",
-      nombre: "Supermercado",
-      fecha: makeDateOffset(2),
-      monto: 95.5,
-    },
-    {
-      id: "demo-tx-3",
-      tipo: "gasto",
-      categoria: "Servicios",
-      nombre: "Internet",
-      fecha: makeDateOffset(4),
-      monto: 42,
-    },
-    {
-      id: "demo-tx-4",
-      tipo: "gasto",
-      categoria: "Transporte",
-      nombre: "Gasolina",
-      fecha: makeDateOffset(6),
-      monto: 30,
-    },
-  ];
-  const demoGoals: Goal[] = [
-    {
-      id: "demo-goal-1",
-      nombre: "Fondo de emergencia",
-      descripcion: "3 meses de gastos",
-      objetivo: 1500,
-      ahorrado: 350,
-      icon: "shield",
-    },
-    {
-      id: "demo-goal-2",
-      nombre: "Laptop nueva",
-      descripcion: "Trabajo y estudio",
-      objetivo: 900,
-      ahorrado: 120,
-      icon: "laptop",
-    },
-  ];
   const [tab, setTab] = useState<Tab>("inicio");
   const [goalModalOpen, setGoalModalOpen] = useState(false);
   const [goals, setGoals] = useState<Goal[]>(() => {
