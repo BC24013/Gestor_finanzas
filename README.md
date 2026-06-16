@@ -91,7 +91,7 @@ El sistema incluye funcionalidades avanzadas como **Ahorro Automático (AutoSave
 
 El diseño de la base de datos está estructurado para soportar la integridad de los datos financieros, las relaciones entre usuarios, sus transacciones, categorías personalizadas y sus metas de ahorro:
 
-![Diagrama Entidad Relación](database/DigramaER.png)
+![Diagrama Entidad Relación](./Workspace/diagramas/DigramaER.png)
 
 *Nota: El archivo de diseño original (`DiagramaER.wsd`) y la imagen se encuentran en la carpeta [database/](file:///c:/Users/i5/Desktop/Gestor_finanzas/Gestor_finanzas-main/database) de este repositorio.*
 
